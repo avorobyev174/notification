@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уведомления</title>
+    <link rel="stylesheet" href="../css/notification.css">
+</head>
+<body>
+    <div class="notification">
+        <div class="notification__header">
+            <img src="../img/notification.png" alt="">
+            <h2>Уведомления</h2>
+        </div>
+        <div class="notification__info"></div>
+        <div class="notification__form">            
+            <textarea                
+                rows="3" 
+                maxlength="50"
+                placeholder="Введите текст уведомления..."
+            ></textarea>
+            <div class="container">
+                <input type="time">
+                <button>ОК</button>
+            </div>            
+        </div>
+        <div class="notification__list">
+            <h3>Список уведомлений</h3>
+            <div></div>
+            <button>Очистить список</button>
+        </div>        
+    </div>
+    <script src="../js/notification.js"></script>
+</body>
+</html>

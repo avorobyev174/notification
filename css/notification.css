@@ -1,0 +1,88 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+.notification {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.notification__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightgray;
+    padding: 0 10px;
+}
+
+.notification__form {
+    display: flex;
+    gap: 10px;
+    padding-top: 5px;
+}
+
+.notification__info {
+    color: tomato;
+    padding-top: 5px;
+}
+
+.notification__list h3 {
+    margin-bottom: 10px;
+}
+
+.notification__item {
+    background-color: lightgray;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notification__item button {
+    background-color: tomato;
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+.notification_warning {
+    background-color: rgb(247, 221, 138);
+    animation: alarm 1s infinite;    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+textarea::placeholder {
+    padding: 2px;
+}
+
+textarea {
+    resize: none;
+    flex-grow: 1;
+}
+
+@keyframes alarm {
+    0% {
+        opacity: 1;        
+    }
+    50% {
+        opacity: 0.35;
+    }    
+    100% {
+        opacity: 1;
+    }
+}
